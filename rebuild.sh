@@ -9,8 +9,7 @@ CYAN='\033[1;36m'
 NC='\033[0m'
 
 echo -e "${YELLOW}[1/"${TOL_STEP}"] ${GREEN}Updates the package lists for upgrades...${NC}"
-apt-get update && apt-get upgrade
-echo ""
+apt-get update && apt-get upgrade -y && echo ""
 
 echo -e "${YELLOW}[2/"${TOL_STEP}"] ${GREEN}Updates config(~/.bashrc & ~/.inputrc) in server...${NC}"
 mv ~/.bashrc ~/.bashrc_bak
