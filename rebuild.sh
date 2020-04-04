@@ -26,6 +26,8 @@ echo ""
 
 source ~/.bashrc
 echo -e "${YELLOW}[4/"${TOL_STEP}"] ${GREEN}Install certificate and key for my domain${CYAN}("$DOMAIN")${GREEN}...${NC}"
+service v2ray stop
+service nginx stop
 ~/.acme.sh/acme.sh --issue -d ${DOMAIN} --standalone -k ec-256
 ~/.acme.sh/acme.sh --installcert -d ${DOMAIN} --fullchainpath /etc/v2ray/v2ray.crt --keypath /etc/v2ray/v2ray.key --ecc
 ~/.acme.sh/acme.sh --upgrade  --auto-upgrade
