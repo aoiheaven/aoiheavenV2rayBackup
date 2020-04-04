@@ -1,5 +1,5 @@
 #! /bin/bash
-TOL_STEP=6
+TOL_STEP=7
 DOMAIN="aoiheaven.ren"
 LIS_PORT=443
 RED='\033[1;31m'
