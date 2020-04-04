@@ -73,8 +73,8 @@ done
 
 echo -e "${YELLOW}Domain: ${GREEN}"${DOMAIN}: ${LIS_PORT}"${NC}"
 echo -e "${YELLOW}UUID & AlterId: ${GREEN}"
-grep "\"id\":" ./config_v2ray
-grep "\"alterId\":" ./config_v2ray
+grep "\"id\":" ~/config_v2ray
+grep "\"alterId\":" ~/config_v2ray
 echo -e "${NC}"
 
 echo "Must reboot server if want to enable accelerate scheme. Reboot now? [Y,n]"
